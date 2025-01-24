@@ -1,0 +1,11 @@
+npm install bootstrap@5.3.3
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+# Install Sass globally
+npm install -g sass
+
+# Watch your custom Sass for changes and compile it to CSS
+sass --watch ./scss/custom.scss ./css/custom.css
