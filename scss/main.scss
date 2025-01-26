@@ -1,1 +1,52 @@
+// Colores principales
+$primary: #3a9ad9;
+$secondary: #28b463;
+$accent: #f4f6f7;
+$neutral: #6c757d;
+$background: #ffffff;
+
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary
+);
+
+
+// Create your own map
+$custom-colors: (
+    "accent": $accent,
+    "neutral": $neutral,
+    "background": $background
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+// Tipografía
+$font-primary: 'Poppins', sans-serif; // Fuente moderna y profesional
+$font-secondary: 'Roboto', sans-serif; // Alternativa clara para textos
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    font-family: $font-primary;
+    color: $neutral;
+    background-color: $background;
+    line-height: 1.6;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-secondary;
+    color: $primary;
+}
+
+@import "./globals";
+@import "./navbar";
+@import "./hero";

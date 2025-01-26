@@ -1,0 +1,12 @@
+.navbar{
+    padding: 16px 0;
+
+    .navbar-brand,
+    .nav-link{
+        font-size: 1.4em;
+
+        &:hover{
+            color: $primary;
+        }
+    }
+}

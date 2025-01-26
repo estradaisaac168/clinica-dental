@@ -1,0 +1,21 @@
+.hero {
+
+    height: 600px;
+    background: linear-gradient(to right, // Degradado de izquierda a derecha
+            rgba(58, 154, 217, 0.9), // Azul con opacidad del 70%
+            rgba(58, 154, 217, 0.3) // Azul más claro con opacidad del 30%
+        ),
+        url(./../img/hero.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .hero-content {
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(1px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+}
