@@ -1,0 +1,36 @@
+// .section.our-team .card-header img {
+//     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+//     transition: transform 0.3s ease;
+// }
+
+// .section.our-team .card-header img:hover {
+//     transform: scale(1.1);
+//     /* Efecto de zoom al pasar el mouse */
+// }
+
+.section.our-team .card {
+    border: none;
+    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.section.our-team .card:hover {
+    transform: translateY(-10px);
+    // box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: $primary
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
