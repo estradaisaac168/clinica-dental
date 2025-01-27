@@ -27,6 +27,15 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 $font-primary: 'Poppins', sans-serif; // Fuente moderna y profesional
 $font-secondary: 'Roboto', sans-serif; // Alternativa clara para textos
 
+$navbar-dark-color: rgba(#f5f5f5, .9);
+$navbar-toggler-padding-x: 0;
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-toggler-font-size: 1.8rem;
+
+
+$accordion-button-focus-box-shadow: none;
+// $accordion-button-active-bg: $primary;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
@@ -51,3 +60,5 @@ h6 {
 @import "./navbar";
 @import "./hero";
 @import "./team";
+@import "./advertisement";
+@import "./services";

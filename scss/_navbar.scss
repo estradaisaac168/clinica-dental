@@ -9,4 +9,9 @@
             color: $primary;
         }
     }
+
+    .navbar-toggler {
+        box-shadow: none !important;
+        border: none;
+    }
 }

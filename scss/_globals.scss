@@ -27,10 +27,22 @@
 }
 
 .card {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    // box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.title{
+
+    width: 100%;
+
+    @include media-breakpoint-up(md){
+        width: 75%;
+    }
 }
 
 
+.section{
+    overflow: hidden;
+}
 
 /* Swiper class */
 // .swiper-button-prev:after,
@@ -55,11 +67,13 @@
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
+    background-color: $white;
     color: $secondary;
     width: initial;
     height: initial;
     font-size: 3rem;
     display: none;
+    padding: .5rem;
 
     @include media-breakpoint-up(lg) {
         display: block;
